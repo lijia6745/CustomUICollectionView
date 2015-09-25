@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CustomUICollectionView/LJCustomCollectionViewController.m"
-            timestampString = "464795286.063908"
+            timestampString = "464837802.891206"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-getSizeWithImageName:"
             landmarkType = "5">
          </BreakpointContent>
@@ -25,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CustomUICollectionView/LJCustomCollectionViewLayout.m"
-            timestampString = "464795240.333946"
+            filePath = "CustomUICollectionView/LJCustomCollectionViewController.m"
+            timestampString = "464839117.778944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-layoutAttributesForItemAtIndexPath:"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-collectionView:didSelectItemAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomUICollectionView/LJUIScrollView.m"
+            timestampString = "464839670.856414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-setImageName:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

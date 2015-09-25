@@ -16,9 +16,18 @@ static const CGFloat imageWidth = 100.f;
     if (self = [super init])
     {
         self.imagesSizes = [[NSMutableArray alloc] init];
-        self.columnHeights = [[NSMutableArray alloc] initWithArray: @[@0.0, @0.0, @0.0, @0.0]];
+        self.columnHeights = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+- (void)setColumnNumber:(NSUInteger)columnNumber
+{
+    _columnNumber = columnNumber;
+    for (int i = 0; i < _columnNumber; ++i)
+    {
+        [self.columnHeights addObject:@0.0];
+    }
 }
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
@@ -32,7 +41,11 @@ static const CGFloat imageWidth = 100.f;
         
         [array addObject:attributes];
     }
-    self.columnHeights = [NSMutableArray arrayWithArray:@[@0.0, @0.0, @0.0, @0.0]];
+    [self.columnHeights removeAllObjects];
+    for (int i = 0; i < _columnNumber; ++i)
+    {
+        [self.columnHeights addObject:@0.0];
+    }
     return array;
 }
 

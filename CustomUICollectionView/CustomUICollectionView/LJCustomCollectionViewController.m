@@ -9,6 +9,7 @@
 #import "LJCustomCollectionViewController.h"
 #import "LJCustomCollectionViewCell.h"
 #import "LJCustomCollectionViewLayout.h"
+#import "LJUIScrollView.h"
 
 static const int pictureCount = 26;
 static const CGFloat imageWidth = 100.f;
@@ -96,5 +97,21 @@ static NSString * const reuseIdentifier = @"Cell";
     return UIEdgeInsetsMake(0, margin, 0, margin);
 }
 #pragma mark <UICollectionViewDelegate>
+
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    LJCustomCollectionViewCell* cell = (LJCustomCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    LJUIScrollView* showBigImageScrollView = [[LJUIScrollView alloc] init];
+    showBigImageScrollView.backgroundColor = [UIColor whiteColor];
+    showBigImageScrollView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    showBigImageScrollView.imageName = cell.imageName;
+    
+    [self.view addSubview:showBigImageScrollView];
+}
 
 @end

@@ -44,6 +44,7 @@
 		2ACC213F1BB4030800DC0E3E /* pic_24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2ACC21251BB4030800DC0E3E /* pic_24.jpg */; settings = {ASSET_TAGS = (); }; };
 		2ACC21401BB4030800DC0E3E /* pic_25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2ACC21261BB4030800DC0E3E /* pic_25.jpg */; settings = {ASSET_TAGS = (); }; };
 		2ACC21411BB4030800DC0E3E /* pic_26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2ACC21271BB4030800DC0E3E /* pic_26.jpg */; settings = {ASSET_TAGS = (); }; };
+		2AFAC3941BB4D9C500CBEFB5 /* LJUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAC3931BB4D9C500CBEFB5 /* LJUIScrollView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		2ACC21251BB4030800DC0E3E /* pic_24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic_24.jpg; sourceTree = "<group>"; };
 		2ACC21261BB4030800DC0E3E /* pic_25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic_25.jpg; sourceTree = "<group>"; };
 		2ACC21271BB4030800DC0E3E /* pic_26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic_26.jpg; sourceTree = "<group>"; };
+		2AFAC3921BB4D9C500CBEFB5 /* LJUIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJUIScrollView.h; sourceTree = "<group>"; };
+		2AFAC3931BB4D9C500CBEFB5 /* LJUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJUIScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,7 @@
 		2ACC201A1BB3E89E00DC0E3E /* CustomUICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				2AFAC3911BB4D98900CBEFB5 /* ShowImageScrollView */,
 				2ACC20511BB3F25600DC0E3E /* CustomCollectionView */,
 				2ACC201E1BB3E89E00DC0E3E /* AppDelegate.h */,
 				2ACC201F1BB3E89E00DC0E3E /* AppDelegate.m */,
@@ -239,6 +243,15 @@
 				2ACC20561BB3F32700DC0E3E /* LJCustomCollectionViewLayout.m */,
 			);
 			name = CustomCollectionView;
+			sourceTree = "<group>";
+		};
+		2AFAC3911BB4D98900CBEFB5 /* ShowImageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				2AFAC3921BB4D9C500CBEFB5 /* LJUIScrollView.h */,
+				2AFAC3931BB4D9C500CBEFB5 /* LJUIScrollView.m */,
+			);
+			name = ShowImageScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +416,7 @@
 				2ACC20501BB3F25000DC0E3E /* LJCustomCollectionViewController.m in Sources */,
 				2ACC20201BB3E89E00DC0E3E /* AppDelegate.m in Sources */,
 				2ACC201D1BB3E89E00DC0E3E /* main.m in Sources */,
+				2AFAC3941BB4D9C500CBEFB5 /* LJUIScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +642,7 @@
 				2ACC20471BB3E89E00DC0E3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ACC20481BB3E89E00DC0E3E /* Build configuration list for PBXNativeTarget "CustomUICollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +651,7 @@
 				2ACC204A1BB3E89E00DC0E3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ACC204B1BB3E89E00DC0E3E /* Build configuration list for PBXNativeTarget "CustomUICollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -644,6 +660,7 @@
 				2ACC204D1BB3E89E00DC0E3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
